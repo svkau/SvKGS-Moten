@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns="https://earkiv.svenskakyrkan.se/schemas/SVK-MOTE/v1.0"
+	 targetNamespace="https://earkiv.svenskakyrkan.se/schemas/SVK-MOTE/v1.0"
+	 elementFormDefault="qualified" version="1.0">
+
+  <xs:annotation>
+    <xs:documentation>
+      SVK-MOTE.xsd - XML Schema
+      Version: 1.0
+      Description: Schema for archiving board meeting documents including
+                   notice, agenda, matters, minutes and attachments.
+                   Developed for Svenska kyrkan e-archive.
+    </xs:documentation>
+  </xs:annotation>
+
+  <!-- ============================================================ -->
+  <!-- ROOT ELEMENT                                                  -->
+  <!-- ============================================================ -->
+
+  <xs:element name="boardMeeting" type="boardMeetingType"/>
+
+  <!-- ============================================================ -->
+  <!-- BOARDMEETING                                                  -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="boardMeetingType">
+    <xs:sequence>
+      <xs:element name="meetingHeader"  type="meetingHeaderType"/>
+      <xs:element name="notice"         type="noticeType"    minOccurs="0"/>
+      <xs:element name="agenda"         type="agendaType"    minOccurs="0"/>
+      <xs:element name="matters"        type="mattersType"   minOccurs="0"/>
+      <xs:element name="minutes"        type="minutesType"   minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- ============================================================ -->
+  <!-- MEETING HEADER                                                -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="meetingHeaderType">
+    <xs:sequence>
+      <xs:element name="meetingId"      type="xs:string"/>
+      <xs:element name="fondsCreator"   type="fondsCreatorType"/>
+      <xs:element name="governingBody"  type="xs:string"/>
+      <xs:element name="meetingType"    type="meetingTypeEnum"/>
+      <xs:choice>
+        <xs:sequence>
+          <xs:element name="meetingDate" type="xs:date"/>
+          <xs:element name="meetingTime" type="xs:time" minOccurs="0"/>
+        </xs:sequence>
+        <xs:sequence>
+          <xs:element name="meetingTimeFrom" type="xs:dateTime"/>
+          <xs:element name="meetingTimeTo"   type="xs:dateTime" minOccurs="0"/>
+        </xs:sequence>
+      </xs:choice>
+      <xs:element name="location" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="fondsCreatorType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="idType"    type="xs:string" use="required"/>
+        <xs:attribute name="creatorId" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="meetingTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ordinary"/>
+      <xs:enumeration value="extraordinary"/>
+      <xs:enumeration value="other"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- ============================================================ -->
+  <!-- NOTICE (KALLELSE)                                             -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="noticeType">
+    <xs:sequence>
+      <xs:element name="issuedDate"      type="xs:date"/>
+      <xs:element name="issuedBy"        type="personRoleType"     minOccurs="0"/>
+      <xs:element name="recipients"      type="recipientsType"     minOccurs="0"/>
+      <xs:element name="noticeDocument"  type="noticeDocumentType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="recipientsType">
+    <xs:sequence>
+      <xs:element name="recipient" type="recipientType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="recipientType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="role" type="attendeeRoleEnum" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="noticeDocumentType">
+    <xs:sequence>
+      <xs:element name="title"       type="xs:string"/>
+      <xs:element name="file"        type="fileReferenceType" minOccurs="0"/>
+      <xs:element name="eSignature"  type="eSignatureType"   minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- ============================================================ -->
+  <!-- AGENDA (DAGORDNING)                                           -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="agendaType">
+    <xs:sequence>
+      <xs:element name="agendaItem" type="agendaItemType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="agendaItemType">
+    <xs:sequence>
+      <xs:element name="itemNumber"  type="xs:string"/>
+      <xs:element name="itemTitle"   type="xs:string"/>
+      <xs:element name="itemType"    type="agendaItemTypeEnum" minOccurs="0"/>
+      <xs:element name="proposer"    type="xs:string"          minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+  </xs:complexType>
+
+  <xs:simpleType name="agendaItemTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="opening"/>
+      <xs:enumeration value="procedural"/>
+      <xs:enumeration value="approval"/>
+      <xs:enumeration value="decision"/>
+      <xs:enumeration value="information"/>
+      <xs:enumeration value="report"/>
+      <xs:enumeration value="other"/>
+      <xs:enumeration value="closing"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- ============================================================ -->
+  <!-- MATTERS (ÄRENDEN)                                             -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="mattersType">
+    <xs:sequence>
+      <xs:element name="matter" type="matterType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="matterType">
+    <xs:sequence>
+      <xs:element name="matterNumber"    type="xs:string"/>
+      <xs:element name="agendaRef"       type="agendaRefType"       minOccurs="0"/>
+      <xs:element name="matterTitle"     type="xs:string"/>
+      <xs:element name="matterCategory"  type="matterCategoryEnum"  minOccurs="0"/>
+      <xs:element name="diaryReferences" type="diaryReferencesType" minOccurs="0"/>
+      <xs:element name="decision"        type="xs:string"           minOccurs="0"/>
+      <xs:element name="dissent"         type="xs:string"           minOccurs="0"/>
+      <xs:element name="attachments"     type="attachmentsType"     minOccurs="0"/>
+      <xs:element name="subMatters"      type="subMattersType"      minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="matterCategoryEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="decision"/>
+      <xs:enumeration value="information"/>
+      <xs:enumeration value="report"/>
+      <xs:enumeration value="other"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="agendaRefType">
+    <xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+  </xs:complexType>
+
+  <!-- ============================================================ -->
+  <!-- SUB-MATTERS                                                   -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="subMattersType">
+    <xs:sequence>
+      <xs:element name="subMatter" type="subMatterType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="subMatterType">
+    <xs:sequence>
+      <xs:element name="subMatterNumber"  type="xs:string"/>
+      <xs:element name="subMatterTitle"   type="xs:string"/>
+      <xs:element name="matterCategory"   type="matterCategoryEnum"  minOccurs="0"/>
+      <xs:element name="diaryReferences"  type="diaryReferencesType" minOccurs="0"/>
+      <xs:element name="decision"         type="xs:string"           minOccurs="0"/>
+      <xs:element name="dissent"          type="xs:string"           minOccurs="0"/>
+      <xs:element name="attachments"      type="attachmentsType"     minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- ============================================================ -->
+  <!-- DIARY REFERENCES                                              -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="diaryReferencesType">
+    <xs:sequence>
+      <xs:element name="diaryReference" type="diaryReferenceType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="diaryReferenceType">
+    <xs:sequence>
+      <xs:element name="diaryId"       type="xs:string"/>
+      <xs:element name="diarySystem"   type="xs:string" minOccurs="0"/>
+      <xs:element name="documentTitle" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- ============================================================ -->
+  <!-- ATTACHMENTS (BILAGOR)                                         -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="attachmentsType">
+    <xs:sequence>
+      <xs:element name="attachment" type="attachmentType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="attachmentType">
+    <xs:sequence>
+      <xs:element name="attachmentId"    type="xs:string"/>
+      <xs:element name="attachmentTitle" type="xs:string"/>
+      <xs:element name="attachmentType"  type="attachmentTypeEnum"/>
+      <xs:choice>
+        <xs:element name="diaryRef" type="diaryReferenceType"/>
+        <xs:element name="file"     type="fileReferenceType"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="attachmentTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="appendix"/>
+      <xs:enumeration value="supporting-document"/>
+      <xs:enumeration value="other"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- ============================================================ -->
+  <!-- MINUTES (PROTOKOLL)                                           -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="minutesType">
+    <xs:sequence>
+      <xs:element name="minutesHeader"   type="minutesHeaderType"/>
+      <xs:element name="attendees"       type="attendeesType"/>
+      <xs:element name="quorum"          type="xs:boolean"/>
+      <xs:element name="minutesDocument" type="minutesDocumentType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="minutesHeaderType">
+    <xs:sequence>
+      <xs:element name="minutesNumber"  type="xs:string"/>
+      <xs:element name="meetingRef"     type="xs:string" minOccurs="0"/>
+      <xs:element name="adjustmentDate" type="xs:date"   minOccurs="0"/>
+      <xs:element name="signingDate"    type="xs:date"   minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- ============================================================ -->
+  <!-- ATTENDEES (DELTAGARE)                                         -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="attendeesType">
+    <xs:sequence>
+      <xs:element name="attendee" type="attendeeType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="attendeeType">
+    <xs:sequence>
+      <xs:element name="name"             type="xs:string"/>
+      <xs:element name="group"            type="xs:string"        minOccurs="0"/>
+      <xs:element name="attendanceStatus" type="attendanceStatusEnum"/>
+      <xs:element name="substitutingFor"  type="xs:string"        minOccurs="0"/>
+      <xs:element name="itemAbsences"     type="itemAbsencesType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="role" type="attendeeRoleEnum" use="required"/>
+  </xs:complexType>
+
+  <xs:simpleType name="attendeeRoleEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="chair"/>
+      <xs:enumeration value="member"/>
+      <xs:enumeration value="deputy"/>
+      <xs:enumeration value="secretary"/>
+      <xs:enumeration value="adjunct"/>
+      <xs:enumeration value="observer"/>
+      <xs:enumeration value="other"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="attendanceStatusEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="present"/>
+      <xs:enumeration value="absent"/>
+      <xs:enumeration value="excused"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- ============================================================ -->
+  <!-- ITEM ABSENCES (FRÅNVARO PER PARAGRAF)                        -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="itemAbsencesType">
+    <xs:sequence>
+      <xs:element name="itemAbsence" type="itemAbsenceType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="itemAbsenceType">
+    <xs:attribute name="matterRef" type="xs:string"             use="required"/>
+    <xs:attribute name="reason"    type="itemAbsenceReasonEnum" use="optional"/>
+  </xs:complexType>
+
+  <xs:simpleType name="itemAbsenceReasonEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="conflict-of-interest"/>
+      <xs:enumeration value="left-meeting"/>
+      <xs:enumeration value="not-yet-arrived"/>
+      <xs:enumeration value="other"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- ============================================================ -->
+  <!-- MINUTES DOCUMENT                                              -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="minutesDocumentType">
+    <xs:sequence>
+      <xs:element name="title"          type="xs:string"/>
+      <xs:element name="originalFormat" type="originalFormatEnum"/>
+      <xs:element name="file"           type="fileReferenceType"/>
+      <xs:element name="eSignatures"    type="eSignaturesType" minOccurs="0"/>
+      <xs:element name="scanning"       type="scanningType"    minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="originalFormatEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="digital"/>
+      <xs:enumeration value="paper"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- ============================================================ -->
+  <!-- ESIGNATURES                                                   -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="eSignaturesType">
+    <xs:sequence>
+      <xs:element name="eSignature" type="eSignatureType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eSignatureType">
+    <xs:sequence>
+      <xs:element name="signerName"               type="xs:string"      minOccurs="0"/>
+      <xs:element name="signerRole"               type="signerRoleEnum" minOccurs="0"/>
+      <xs:element name="signatureType"            type="xs:string"      minOccurs="0"/>
+      <xs:element name="signatureServiceProvider" type="xs:string"      minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="present"                 type="xs:boolean"  use="required"/>
+    <xs:attribute name="dateSignatureIsVerified" type="xs:dateTime" use="optional"/>
+    <xs:attribute name="eSignatureHasExisted"    type="xs:boolean"  use="optional"/>
+  </xs:complexType>
+
+  <xs:simpleType name="signerRoleEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="chair"/>
+      <xs:enumeration value="adjuster"/>
+      <xs:enumeration value="secretary"/>
+      <xs:enumeration value="other"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- ============================================================ -->
+  <!-- SCANNING METADATA                                             -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="scanningType">
+    <xs:sequence>
+      <xs:element name="scannedDate"    type="xs:date"   minOccurs="0"/>
+      <xs:element name="scannedBy"      type="xs:string" minOccurs="0"/>
+      <xs:element name="resolution"     type="xs:string" minOccurs="0"/>
+      <xs:element name="scanningSystem" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- ============================================================ -->
+  <!-- SHARED TYPES                                                  -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="personRoleType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="role" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="fileReferenceType">
+    <xs:attribute name="path"       type="xs:string" use="required"/>
+    <xs:attribute name="fileFormat" type="xs:string" use="optional"/>
+  </xs:complexType>
+
+</xs:schema>
