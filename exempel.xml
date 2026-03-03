@@ -3,195 +3,226 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="https://earkiv.svenskakyrkan.se/schemas/SVK-MOTE/v1.0 SVK-MOTE.xsd">
 	<meetingHeader>
-		<meetingId>SKY-2025-STYRELSE-001</meetingId>
-		<fondsCreator idType="organisationsnummer" creatorId="1234560987">Sunne pastorat</fondsCreator>
-		<governingBody>Kyrkorådet</governingBody>
-		<meetingType>ordinary</meetingType>
-		<meetingDate>2025-03-15</meetingDate>
-		<meetingTime>09:00:00</meetingTime>
-		<location>Församlingshemmet, Storgatan 1, Sunne</location>
-	</meetingHeader>
-	<notice>
-		<issuedDate>2025-03-01</issuedDate>
-		<issuedBy>
-			<name>Anna Lindgren</name>
-			<role>secretary</role>
-		</issuedBy>
-		<recipients>
-			<recipient role="member">
-				<name>Erik Johansson</name>
-			</recipient>
-			<recipient role="member">
-				<name>Maria Svensson</name>
-			</recipient>
-			<recipient role="deputy">
-				<name>Lars Pettersson</name>
-			</recipient>
-			<recipient role="observer">
-				<name>Karin Nilsson</name>
-			</recipient>
-			<recipient role="secretary">
-				<name>Anna Lindgren</name>
-			</recipient>
-		</recipients>
-		<noticeDocument>
-			<title>Kallelse till kyrkorådsmöte 2025-03-15</title>
-			<file path="documents/kallelse_20250315.pdf" fileFormat="PDF/A-2b"/>
-			<eSignature present="false"/>
-		</noticeDocument>
-	</notice>
-	<agenda>
-		<agendaItem order="1">
-			<itemNumber>§1</itemNumber>
-			<itemTitle>Mötets öppnande</itemTitle>
-			<itemType>opening</itemType>
-		</agendaItem>
-		<agendaItem order="2">
-			<itemNumber>§2</itemNumber>
-			<itemTitle>Val av justerare</itemTitle>
-			<itemType>procedural</itemType>
-		</agendaItem>
-		<agendaItem order="3">
-			<itemNumber>§3</itemNumber>
-			<itemTitle>Godkännande av dagordningen</itemTitle>
-			<itemType>approval</itemType>
-		</agendaItem>
-		<agendaItem order="4">
-			<itemNumber>§4</itemNumber>
-			<itemTitle>Budget 2026 – förslag till beslut</itemTitle>
-			<itemType>decision</itemType>
-		</agendaItem>
-		<agendaItem order="5">
-			<itemNumber>§5</itemNumber>
-			<itemTitle>Informationspunkter</itemTitle>
-			<itemType>information</itemType>
-		</agendaItem>
-		<agendaItem order="6">
-			<itemNumber>§6</itemNumber>
-			<itemTitle>Övriga frågor</itemTitle>
-		</agendaItem>
-		<agendaItem order="7">
-			<itemNumber>§7</itemNumber>
-			<itemTitle>Mötets avslutande</itemTitle>
-			<itemType>closing</itemType>
-		</agendaItem>
-	</agenda>
-	<matters>
-		<matter>
-			<matterNumber>§4</matterNumber>
-			<agendaRef order="4"/>
-			<matterTitle>Budget 2026 – förslag till beslut</matterTitle>
-			<matterCategory>decision</matterCategory>
-			<diaryReferences>
-				<diaryReference>
-					<diaryId>SKY-2025-0142</diaryId>
-					<diarySystem>Public 360</diarySystem>
-				</diaryReference>
-			</diaryReferences>
-			<decision>Kyrkorådet beslutar att godkänna budgetförslaget för 2026
+    <meetingId>SKY-2025-KYRKORАД-001</meetingId>
+    <fondsCreator idType="organisationsnummer" creatorId="1234560987">Sunne pastorat</fondsCreator>
+    <governingBody>Kyrkorådet</governingBody>
+    <meetingType>ordinary</meetingType>
+    <meetingDate>2025-03-15</meetingDate>
+    <meetingTime>09:00:00</meetingTime>
+    <location>Församlingshemmet, Storgatan 1, Sunne</location>
+  </meetingHeader>
+  <notice>
+    <issuedDate>2025-03-01</issuedDate>
+    <issuedBy>
+      <name>Anna Lindgren</name>
+      <role>secretary</role>
+    </issuedBy>
+    <recipients>
+      <recipient role="member"><name>Erik Johansson</name></recipient>
+      <recipient role="member"><name>Maria Svensson</name></recipient>
+      <recipient role="deputy"><name>Lars Pettersson</name></recipient>
+      <recipient role="observer"><name>Karin Nilsson</name></recipient>
+      <recipient role="secretary"><name>Anna Lindgren</name></recipient>
+    </recipients>
+    <noticeDocument>
+      <title>Kallelse till kyrkorådsmöte 2025-03-15</title>
+      <file path="documents/kallelse_20250315.pdf" fileFormat="PDF/A-2b"/>
+      <eSignature present="false"/>
+    </noticeDocument>
+  </notice>
+  <agenda>
+    <agendaItem order="1">
+      <itemNumber>§1</itemNumber>
+      <itemTitle>Mötets öppnande</itemTitle>
+      <itemType>opening</itemType>
+    </agendaItem>
+    <agendaItem order="2">
+      <itemNumber>§2</itemNumber>
+      <itemTitle>Val av justerare</itemTitle>
+      <itemType>procedural</itemType>
+    </agendaItem>
+    <agendaItem order="3">
+      <itemNumber>§3</itemNumber>
+      <itemTitle>Godkännande av dagordningen</itemTitle>
+      <itemType>approval</itemType>
+    </agendaItem>
+    <agendaItem order="4">
+      <itemNumber>§4</itemNumber>
+      <itemTitle>Budget 2026 - förslag till beslut</itemTitle>
+      <itemType>decision</itemType>
+    </agendaItem>
+    <agendaItem order="5">
+      <itemNumber>§5</itemNumber>
+      <itemTitle>Personalärende</itemTitle>
+      <itemType>decision</itemType>
+    </agendaItem>
+    <agendaItem order="6">
+      <itemNumber>§6</itemNumber>
+      <itemTitle>Informationspunkter</itemTitle>
+      <itemType>information</itemType>
+    </agendaItem>
+    <agendaItem order="7">
+      <itemNumber>§7</itemNumber>
+      <itemTitle>Övriga frågor</itemTitle>
+    </agendaItem>
+    <agendaItem order="8">
+      <itemNumber>§8</itemNumber>
+      <itemTitle>Mötets avslutande</itemTitle>
+      <itemType>closing</itemType>
+    </agendaItem>
+  </agenda>
+  <matters>
+    <!-- Beslutsärende med diariereferens, reservation och bilaga utanför diariet -->
+    <matter>
+      <matterNumber>§4</matterNumber>
+      <agendaRef order="4"/>
+      <matterTitle>Budget 2026 - förslag till beslut</matterTitle>
+      <matterCategory>decision</matterCategory>
+      <diaryReferences>
+        <diaryReference>
+          <diaryId>SKY-2025-0142</diaryId>
+          <diarySystem>Public 360</diarySystem>
+        </diaryReference>
+      </diaryReferences>
+      <decision>Kyrkorådet beslutar att godkänna budgetförslaget för 2026
         i enlighet med framlagt förslag.</decision>
-			<dissent>Ledamot Lars Pettersson reserverar sig mot beslutet.</dissent>
-			<attachments>
-				<attachment>
-					<attachmentId>BIL-001</attachmentId>
-					<attachmentTitle>Budgetförslag 2026</attachmentTitle>
-					<attachmentType>supporting-document</attachmentType>
-					<diaryRef>
-						<diaryId>SKY-2025-0142</diaryId>
-						<diarySystem>Public 360</diarySystem>
-						<documentTitle>Budgetförslag 2026 v3.pdf</documentTitle>
-					</diaryRef>
-				</attachment>
-				<attachment>
-					<attachmentId>BIL-002</attachmentId>
-					<attachmentTitle>Kommentarer från ekonomigruppen</attachmentTitle>
-					<attachmentType>appendix</attachmentType>
-					<file path="attachments/ekonomigruppen_kommentarer.pdf" fileFormat="PDF/A-2b"/>
-				</attachment>
-			</attachments>
-		</matter>
-		<matter>
-			<matterNumber>§5</matterNumber>
-			<agendaRef order="5"/>
-			<matterTitle>Informationspunkter</matterTitle>
-			<matterCategory>information</matterCategory>
-			<subMatters>
-				<subMatter>
-					<subMatterNumber>5.1</subMatterNumber>
-					<subMatterTitle>Lägesrapport IT-projekt</subMatterTitle>
-					<matterCategory>information</matterCategory>
-					<attachments>
-						<attachment>
-							<attachmentId>BIL-003</attachmentId>
-							<attachmentTitle>Lägesrapport IT-projekt mars 2025</attachmentTitle>
-							<attachmentType>supporting-document</attachmentType>
-							<file path="attachments/lagesrapport_it_mars2025.pdf" fileFormat="PDF/A-2b"/>
-						</attachment>
-					</attachments>
-				</subMatter>
-				<subMatter>
-					<subMatterNumber>5.2</subMatterNumber>
-					<subMatterTitle>Information från kyrkoherden</subMatterTitle>
-					<matterCategory>information</matterCategory>
-				</subMatter>
-			</subMatters>
-		</matter>
-	</matters>
-	<minutes>
-		<minutesHeader>
-			<minutesNumber>SKY-PROT-2025-001</minutesNumber>
-			<meetingRef>SKY-2025-STYRELSE-001</meetingRef>
-			<adjustmentDate>2025-03-22</adjustmentDate>
-			<signingDate>2025-03-22</signingDate>
-		</minutesHeader>
-		<attendees>
-			<attendee role="chair">
-				<name>Erik Johansson</name>
-				<group>Borgerlighet och kristna värden</group>
-				<attendanceStatus>present</attendanceStatus>
-			</attendee>
-			<attendee role="member">
-				<name>Maria Svensson</name>
-				<group>POSK</group>
-				<attendanceStatus>present</attendanceStatus>
-				<itemAbsences>
-					<itemAbsence matterRef="§4" reason="conflict-of-interest"/>
-				</itemAbsences>
-			</attendee>
-			<attendee role="deputy">
-				<name>Lars Pettersson</name>
-				<group>Socialdemokraterna</group>
-				<attendanceStatus>present</attendanceStatus>
-				<substitutingFor>Anna Karlsson</substitutingFor>
-			</attendee>
-			<attendee role="observer">
-				<name>Karin Nilsson</name>
-				<attendanceStatus>present</attendanceStatus>
-			</attendee>
-			<attendee role="secretary">
-				<name>Anna Lindgren</name>
-				<attendanceStatus>present</attendanceStatus>
-			</attendee>
-		</attendees>
-		<quorum>true</quorum>
-		<minutesDocument>
-			<title>Protokoll kyrkorådsmöte 2025-03-15</title>
-			<originalFormat>digital</originalFormat>
-			<file path="documents/protokoll_20250315.pdf" fileFormat="PDF/A-2b"/>
-			<eSignatures>
-				<eSignature present="true" dateSignatureIsVerified="2025-03-22T14:32:00">
-					<signerName>Erik Johansson</signerName>
-					<signerRole>chair</signerRole>
-					<signatureType>PAdES-B-LTA</signatureType>
-					<signatureServiceProvider>Svensk e-legitimation AB</signatureServiceProvider>
-				</eSignature>
-				<eSignature present="true" dateSignatureIsVerified="2025-03-22T15:10:00">
-					<signerName>Maria Svensson</signerName>
-					<signerRole>adjuster</signerRole>
-					<signatureType>PAdES-B-LTA</signatureType>
-					<signatureServiceProvider>Svensk e-legitimation AB</signatureServiceProvider>
-				</eSignature>
-			</eSignatures>
-		</minutesDocument>
-	</minutes>
+      <dissent>Ledamot Lars Pettersson reserverar sig mot beslutet.</dissent>
+      <attachments>
+        <!-- Bilaga som finns i diariet - referens räcker -->
+        <attachment>
+          <attachmentId>BIL-001</attachmentId>
+          <attachmentTitle>Budgetförslag 2026</attachmentTitle>
+          <attachmentType>supporting-document</attachmentType>
+          <diaryRef>
+            <diaryId>SKY-2025-0142</diaryId>
+            <diarySystem>Public 360</diarySystem>
+            <documentTitle>Budgetförslag 2026 v3.pdf</documentTitle>
+          </diaryRef>
+        </attachment>
+        <!-- Bilaga som inte är diarieförd - filen inkluderas -->
+        <attachment>
+          <attachmentId>BIL-002</attachmentId>
+          <attachmentTitle>Kommentarer från ekonomigruppen</attachmentTitle>
+          <attachmentType>appendix</attachmentType>
+          <file path="attachments/ekonomigruppen_kommentarer.pdf"
+                fileFormat="PDF/A-2b"/>
+        </attachment>
+      </attachments>
+    </matter>
+    <!-- Sekretessbelagt ärende -->
+    <matter>
+      <matterNumber>§5</matterNumber>
+      <agendaRef order="5"/>
+      <matterTitle>Personalärende</matterTitle>
+      <matterCategory>decision</matterCategory>
+      <restriction>
+        <restrictionType>confidential</restrictionType>
+        <legalBasis>OSL 39 kap. 2 §</legalBasis>
+        <restrictionNote>Ärendet omfattas av sekretess avseende enskilds personliga förhållanden</restrictionNote>
+      </restriction>
+      <diaryReferences>
+        <diaryReference>
+          <diaryId>SKY-2025-0187</diaryId>
+          <diarySystem>Public 360</diarySystem>
+        </diaryReference>
+      </diaryReferences>
+    </matter>
+    <!-- Informationsärende med underärenden -->
+    <matter>
+      <matterNumber>§6</matterNumber>
+      <agendaRef order="6"/>
+      <matterTitle>Informationspunkter</matterTitle>
+      <matterCategory>information</matterCategory>
+      <subMatters>
+        <subMatter>
+          <subMatterNumber>6.1</subMatterNumber>
+          <subMatterTitle>Lägesrapport IT-projekt</subMatterTitle>
+          <matterCategory>information</matterCategory>
+          <attachments>
+            <attachment>
+              <attachmentId>BIL-003</attachmentId>
+              <attachmentTitle>Lägesrapport IT-projekt mars 2025</attachmentTitle>
+              <attachmentType>supporting-document</attachmentType>
+              <file path="attachments/lagesrapport_it_mars2025.pdf"
+                    fileFormat="PDF/A-2b"/>
+            </attachment>
+          </attachments>
+        </subMatter>
+        <subMatter>
+          <subMatterNumber>6.2</subMatterNumber>
+          <subMatterTitle>Information från kyrkoherden</subMatterTitle>
+          <matterCategory>information</matterCategory>
+        </subMatter>
+      </subMatters>
+    </matter>
+  </matters>
+  <minutes>
+    <minutesHeader>
+      <minutesNumber>SKY-PROT-2025-001</minutesNumber>
+      <meetingRef>SKY-2025-KYRKORAD-001</meetingRef>
+      <adjustmentDate>2025-03-22</adjustmentDate>
+      <signingDate>2025-03-22</signingDate>
+      <signatories>
+        <signatory role="chair">Erik Johansson</signatory>
+        <signatory role="adjuster">Maria Svensson</signatory>
+      </signatories>
+      <posting>
+        <postedDate>2025-03-23</postedDate>
+        <removedDate>2025-04-06</removedDate>
+        <postingLocation>Sunne pastoratkansli, anslagstavla</postingLocation>
+        <appealDeadline>2025-04-06</appealDeadline>
+      </posting>
+    </minutesHeader>
+    <attendees>
+      <attendee role="chair">
+        <name>Erik Johansson</name>
+        <group>Borgerlighet och kristna värden</group>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="member">
+        <name>Maria Svensson</name>
+        <group>POSK</group>
+        <attendanceStatus>present</attendanceStatus>
+        <!-- Maria är jävig i §4 och lämnar rummet under den punkten -->
+        <itemAbsences>
+          <itemAbsence matterRef="§4" reason="conflict-of-interest"/>
+        </itemAbsences>
+      </attendee>
+      <attendee role="deputy">
+        <name>Lars Pettersson</name>
+        <group>Socialdemokraterna</group>
+        <attendanceStatus>present</attendanceStatus>
+        <!-- Tjänstgörande ersättare för frånvarande ordinarie ledamot -->
+        <substitutingFor>Anna Karlsson</substitutingFor>
+      </attendee>
+      <attendee role="observer">
+        <name>Karin Nilsson</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="secretary">
+        <name>Anna Lindgren</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+    </attendees>
+    <quorum>true</quorum>
+    <minutesDocument>
+      <title>Protokoll kyrkorådsmöte 2025-03-15</title>
+      <originalFormat>digital</originalFormat>
+      <file path="documents/protokoll_20250315.pdf" fileFormat="PDF/A-2b"/>
+      <eSignatures>
+        <eSignature present="true" dateSignatureIsVerified="2025-03-22T14:32:00">
+          <signerName>Erik Johansson</signerName>
+          <signerRole>chair</signerRole>
+          <signatureType>PAdES-B-LTA</signatureType>
+          <signatureServiceProvider>Svensk e-legitimation AB</signatureServiceProvider>
+        </eSignature>
+        <eSignature present="true" dateSignatureIsVerified="2025-03-22T15:10:00">
+          <signerName>Maria Svensson</signerName>
+          <signerRole>adjuster</signerRole>
+          <signatureType>PAdES-B-LTA</signatureType>
+          <signatureServiceProvider>Svensk e-legitimation AB</signatureServiceProvider>
+        </eSignature>
+      </eSignatures>
+    </minutesDocument>
+  </minutes>
 </boardMeeting>
