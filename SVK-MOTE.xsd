@@ -158,6 +158,7 @@
       <xs:element name="agendaRef"       type="agendaRefType"       minOccurs="0"/>
       <xs:element name="matterTitle"     type="xs:string"/>
       <xs:element name="matterCategory"  type="matterCategoryEnum"  minOccurs="0"/>
+	  <xs:element name="restriction"     type="restrictionType"     minOccurs="0"/>
       <xs:element name="diaryReferences" type="diaryReferencesType" minOccurs="0"/>
       <xs:element name="decision"        type="xs:string"           minOccurs="0"/>
       <xs:element name="dissent"         type="xs:string"           minOccurs="0"/>
@@ -194,6 +195,7 @@
       <xs:element name="subMatterNumber"  type="xs:string"/>
       <xs:element name="subMatterTitle"   type="xs:string"/>
       <xs:element name="matterCategory"   type="matterCategoryEnum"  minOccurs="0"/>
+	  <xs:element name="restriction"      type="restrictionType"     minOccurs="0"/>
       <xs:element name="diaryReferences"  type="diaryReferencesType" minOccurs="0"/>
       <xs:element name="decision"         type="xs:string"           minOccurs="0"/>
       <xs:element name="dissent"          type="xs:string"           minOccurs="0"/>
@@ -201,6 +203,27 @@
     </xs:sequence>
   </xs:complexType>
 
+  <!-- ============================================================ -->
+  <!-- RESTRICTION (SEKRETESS) - follows ERMS restriction structure -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="restrictionType">
+    <xs:sequence>
+      <xs:element name="restrictionType" type="restrictionTypeEnum"/>
+      <xs:element name="legalBasis"      type="xs:string" minOccurs="0"/>
+      <xs:element name="restrictionNote" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="restrictionTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="confidential"/>
+      <xs:enumeration value="gdpr"/>
+      <xs:enumeration value="integrity"/>
+      <xs:enumeration value="other"/>
+    </xs:restriction>
+  </xs:simpleType>
+	
   <!-- ============================================================ -->
   <!-- DIARY REFERENCES                                              -->
   <!-- ============================================================ -->
@@ -234,6 +257,7 @@
       <xs:element name="attachmentId"    type="xs:string"/>
       <xs:element name="attachmentTitle" type="xs:string"/>
       <xs:element name="attachmentType"  type="attachmentTypeEnum"/>
+	  <xs:element name="restriction"     type="restrictionType" minOccurs="0"/>
       <xs:choice>
         <xs:element name="diaryRef" type="diaryReferenceType"/>
         <xs:element name="file"     type="fileReferenceType"/>
@@ -268,6 +292,39 @@
       <xs:element name="meetingRef"     type="xs:string" minOccurs="0"/>
       <xs:element name="adjustmentDate" type="xs:date"   minOccurs="0"/>
       <xs:element name="signingDate"    type="xs:date"   minOccurs="0"/>
+	  <xs:element name="signatories"    type="signatoriesType" minOccurs="0"/>
+      <xs:element name="posting"        type="PostingType"     minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- ============================================================ -->
+  <!-- SIGNATORIES                                                  -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="signatoriesType">
+    <xs:sequence>
+      <xs:element name="signatory" type="signatoryType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="signatoryType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="role" type="signerRoleEnum" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <!-- ============================================================ -->
+  <!-- POSTING (ANSLAG)                                             -->
+  <!-- ============================================================ -->
+
+  <xs:complexType name="postingType">
+    <xs:sequence>
+      <xs:element name="postedDate"      type="xs:date"   minOccurs="0"/>
+      <xs:element name="removedDate"     type="xs:date"   minOccurs="0"/>
+      <xs:element name="postingLocation" type="xs:string" minOccurs="0"/>
+      <xs:element name="appealDeadline"  type="xs:date"   minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
 
