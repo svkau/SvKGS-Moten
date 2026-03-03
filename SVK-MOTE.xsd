@@ -293,7 +293,7 @@
       <xs:element name="adjustmentDate" type="xs:date"   minOccurs="0"/>
       <xs:element name="signingDate"    type="xs:date"   minOccurs="0"/>
 	  <xs:element name="signatories"    type="signatoriesType" minOccurs="0"/>
-      <xs:element name="posting"        type="PostingType"     minOccurs="0"/>
+      <xs:element name="posting"        type="postingType"     minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
 
