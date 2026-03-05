@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<boardMeeting xmlns="https://earkiv.svenskakyrkan.se/schemas/SVK-MOTE/v1.0"
+<boardMeeting xmlns="https://earkiv.svenskakyrkan.se/schemas/SVK-MOTE/v1"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="https://earkiv.svenskakyrkan.se/schemas/SVK-MOTE/v1.0 SVK-MOTE.xsd">
+	xsi:schemaLocation="https://earkiv.svenskakyrkan.se/schemas/SVK-MOTE/v1 SVK-MOTE.xsd">
 	<meetingHeader>
     <meetingId>SKY-2025-KYRKORАД-001</meetingId>
     <fondsCreator idType="organisationsnummer" creatorId="1234560987">Sunne pastorat</fondsCreator>
@@ -86,7 +86,12 @@
       </diaryReferences>
       <decision>Kyrkorådet beslutar att godkänna budgetförslaget för 2026
         i enlighet med framlagt förslag.</decision>
-      <dissent>Ledamot Lars Pettersson reserverar sig mot beslutet.</dissent>
+      <statements>
+		<statement type="reservation">
+			<name>Lars Pettersson</name>
+			<statementText>Det var det värsta jag har sett!</statementText>
+		</statement>
+	</statements>
       <attachments>
         <!-- Bilaga som finns i diariet - referens räcker -->
         <attachment>
