@@ -159,6 +159,8 @@
       <xs:element name="matterTitle"     type="xs:string"/>
       <xs:element name="matterCategory"  type="matterCategoryEnum"  minOccurs="0"/>
 	  <xs:element name="restriction"     type="restrictionType"     minOccurs="0"/>
+	  <xs:element name="rapporteur"      type="xs:string"           minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="responsible"     type="xs:string"           minOccurs="0" maxOccurs="unbounded"/>
       <xs:element name="diaryReferences" type="diaryReferencesType" minOccurs="0"/>
       <xs:element name="decision"        type="xs:string"           minOccurs="0"/>
       <xs:element name="statements"      type="statementsType"      minOccurs="0"/>
@@ -266,7 +268,7 @@
       <xs:element name="diaryId"       type="xs:string"/>
       <xs:element name="diarySystem"   type="xs:string" minOccurs="0"/>
       <xs:element name="documentTitle" type="xs:string" minOccurs="0"/>
-      <xs:element name="responsible" type="xs:string" minOccurs="0"/>
+      <xs:element name="caseHandler" type="xs:string" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
 
