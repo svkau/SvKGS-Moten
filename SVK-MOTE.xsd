@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	 xmlns="https://earkiv.svenskakyrkan.se/schemas/SVK-MOTE/v1.0"
-	 targetNamespace="https://earkiv.svenskakyrkan.se/schemas/SVK-MOTE/v1.0"
+	 xmlns="https://earkiv.svenskakyrkan.se/schemas/SVK-MOTE/v1"
+	 targetNamespace="https://earkiv.svenskakyrkan.se/schemas/SVK-MOTE/v1"
 	 elementFormDefault="qualified" version="1.0">
 
   <xs:annotation>
@@ -161,7 +161,7 @@
 	  <xs:element name="restriction"     type="restrictionType"     minOccurs="0"/>
       <xs:element name="diaryReferences" type="diaryReferencesType" minOccurs="0"/>
       <xs:element name="decision"        type="xs:string"           minOccurs="0"/>
-      <xs:element name="dissent"         type="xs:string"           minOccurs="0"/>
+      <xs:element name="statements"      type="statementsType"      minOccurs="0"/>
       <xs:element name="attachments"     type="attachmentsType"     minOccurs="0"/>
       <xs:element name="subMatters"      type="subMattersType"      minOccurs="0"/>
     </xs:sequence>
@@ -198,7 +198,7 @@
 	  <xs:element name="restriction"      type="restrictionType"     minOccurs="0"/>
       <xs:element name="diaryReferences"  type="diaryReferencesType" minOccurs="0"/>
       <xs:element name="decision"         type="xs:string"           minOccurs="0"/>
-      <xs:element name="dissent"          type="xs:string"           minOccurs="0"/>
+      <xs:element name="statements"      type="statementsType"      minOccurs="0"/>
       <xs:element name="attachments"      type="attachmentsType"     minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
@@ -223,6 +223,33 @@
       <xs:enumeration value="other"/>
     </xs:restriction>
   </xs:simpleType>
+  
+   <!-- ============================================================ -->
+   <!-- STATEMENTS (RESERVATION, SARSKILD MENING, SARSKILT YTTRANDE) -->
+   <!-- ============================================================ -->
+
+  <xs:complexType name="statementsType">
+    <xs:sequence>
+      <xs:element name="statement" type="statementType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="statementType">
+    <xs:sequence>
+      <xs:element name="name"          type="xs:string" minOccurs="0"/>
+      <xs:element name="statementText" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="type" type="statementTypeEnum" use="required"/>
+  </xs:complexType>
+
+  <xs:simpleType name="statementTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="reservation"/>
+      <xs:enumeration value="sarskild-mening"/>
+      <xs:enumeration value="sarskilt-yttrande"/>
+      <xs:enumeration value="other"/>
+    </xs:restriction>
+  </xs:simpleType>
 	
   <!-- ============================================================ -->
   <!-- DIARY REFERENCES                                              -->
@@ -239,6 +266,7 @@
       <xs:element name="diaryId"       type="xs:string"/>
       <xs:element name="diarySystem"   type="xs:string" minOccurs="0"/>
       <xs:element name="documentTitle" type="xs:string" minOccurs="0"/>
+      <xs:element name="responsible" type="xs:string" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
 
