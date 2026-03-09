@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<boardMeeting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="BoardMeeting.xsd">
+
+  <meetingHeader>
+    <meetingId>KS-2026:1</meetingId>
+    <fondsCreator idType="organisationsnummer" creatorId="252002-6185">Svenska kyrkan, nationell nivå</fondsCreator>
+    <governingBody>Kyrkostyrelsen</governingBody>
+    <meetingType>ordinary</meetingType>
+    <meetingTimeFrom>2026-02-24T10:00:00</meetingTimeFrom>
+    <meetingTimeTo>2026-02-25T14:30:00</meetingTimeTo>
+    <location>Kyrkokansliet, Uppsala</location>
+  </meetingHeader>
+
+  <matters>
+
+    <matter>
+      <matterNumber>§ 1</matterNumber>
+      <matterTitle>Sammanträdets öppnande</matterTitle>
+      <matterCategory>information</matterCategory>
+      <decision>Efter Sv.Ps. 135, bön och upprop förklarade ordföranden sammanträdet öppnat.</decision>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 2</matterNumber>
+      <matterTitle>Val av protokollsjusterare</matterTitle>
+      <matterCategory>decision</matterCategory>
+      <decision>Håkan Widepalm valdes att tillsammans med ordföranden justera protokollet.</decision>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 3</matterNumber>
+      <matterTitle>Fastställande av föredragningslista</matterTitle>
+            <matterDescription>Jesper Eneroth anmälde en fråga som skulle tas upp under § 12 angående val till kyrkostyrelsens arbetsgrupper och samarbetsråd 2026–2029.</matterDescription>
+      <matterCategory>decision</matterCategory>
+      <decision>Föredragningslistan fastställdes.</decision>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 4</matterNumber>
+      <matterTitle>Rapport från arbetsutskottet</matterTitle>
+      <matterDescription>Kyrkostyrelsen fick rapport från arbetsutskottets sammanträde 4–5 februari 2026 och diskuterade rapporten.</matterDescription>
+      <matterCategory>report</matterCategory>
+      <rapporteur>Patrik Lidin</rapporteur>
+      
+      <decision>Protokollet från arbetsutskottets sammanträde lades till handlingarna.</decision>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 5</matterNumber>
+      <matterTitle>Kulturutredning (KmSkr 2024:13); fastställande av utredningsdirektiv</matterTitle>
+      <matterDescription>Till kyrkomötet 2024 lyftes frågorna kring Svenska kyrkan och kulturen i motionen 2024:46 av Sven Milltoft m.fl. Kyrkomötet beslutade den 20 november 2024 att bifalla motionen (KmSkr 2024:13). Kyrkostyrelsen beslutade 13 februari 2025 om ärendets beredning. Kyrkostyrelsen fick en presentation av förslag till direktiv, diskuterade förslaget och gjorde två tillägg.</matterDescription>
+      <matterCategory>decision</matterCategory>
+      <rapporteur>Karin Sarja</rapporteur>
+      <rapporteur>Ida Hallström Åsman</rapporteur>
+      <diaryReferences>
+        <diaryReference>
+          <diaryId>KS 2025-1702</diaryId>
+        </diaryReference>
+      </diaryReferences>
+      <decision>Kyrkostyrelsen beslutade i enlighet med arbetsutskottets förslag att anta direktiv för en kulturutredning.</decision>
+      <attachments>
+        <attachment>
+          <attachmentId>Direktiv-för-kulturutredning</attachmentId>
+          <attachmentTitle>Direktiv för kulturutredning</attachmentTitle>
+          <attachmentType>supporting-document</attachmentType>
+          <file path="Direktiv-för-kulturutredning.pdf" fileFormat="application/pdf"/>
+        </attachment>
+      </attachments>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 6</matterNumber>
+      <matterTitle>Utlandskyrkans organisation (KmSkr 2025:4); fastställande av utredningsdirektiv</matterTitle>
+      <matterDescription>Kyrkomötet 2025 beslutade att uppdra till kyrkostyrelsen att utreda hur utlandskyrkan kan erhålla en sammanhållen främjande- och tillsynsuppgift (KmSkr 2025:4). Kyrkostyrelsen fick en presentation av förslag till direktiv och diskuterade förslaget.</matterDescription>
+      <matterCategory>decision</matterCategory>
+      <rapporteur>Mattias Thalén</rapporteur>
+      <rapporteur>Fredrik Nilsson</rapporteur>
+      <diaryReferences>
+        <diaryReference>
+          <diaryId>KS 2026-0120</diaryId>
+        </diaryReference>
+      </diaryReferences>
+      <decision>Kyrkostyrelsen beslutade i enlighet med arbetsutskottets förslag att anta direktiv till en utredning om tillsyn och främjande för Svenska kyrkan i utlandet.</decision>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 7</matterNumber>
+      <matterTitle>Ärenden från 2025 års kyrkomöte</matterTitle>
+      <matterDescription>Arbetsutskottet fick 3 december 2025 (§ 136) en presentation av de 22 skrivelser kyrkostyrelsen mottagit från 2025 års kyrkomöte. Kyrkostyrelsen fick en presentation av en promemoria med uppdragen, förslag på beredning, resursåtgång och tidsplan.</matterDescription>
+      <matterCategory>decision</matterCategory>
+      <rapporteur>Camilla Asp</rapporteur>
+      <rapporteur>Erika Brundin</rapporteur>
+      <rapporteur>Emma Hansen Dahlqvist</rapporteur>
+      <diaryReferences>
+        <diaryReference>
+          <diaryId>KS 2025-0001</diaryId>
+        </diaryReference>
+      </diaryReferences>
+      <decision>Kyrkostyrelsen beslutade i enlighet med arbetsutskottets förslag att uppdragen enligt prot.bil. 1 från kyrkomötet 2025 ska beredas enligt förslag.</decision>
+      <attachments>
+        <attachment>
+          <attachmentId>Prot.bil.-1-–-Ärenden-från-202</attachmentId>
+          <attachmentTitle>Prot.bil. 1 – Ärenden från 2025 års kyrkomöte</attachmentTitle>
+          <attachmentType>appendix</attachmentType>
+          <file path="Prot.bil.-1---Ärenden-från-202.pdf" fileFormat="application/pdf"/>
+        </attachment>
+      </attachments>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 8</matterNumber>
+      <matterTitle>Slutrapport: Ekumeniskt möte 1925 och 2025 och kyrkomötet i Nicea 325</matterTitle>
+      <matterDescription>Kyrkostyrelsen fick en redovisning av genomförandet av kyrkomötesuppdragen om att högtidlighålla Stockholmsmötet 1925 och kyrkomötet i Nicea 325. Uppdragen genomfördes i samverkan med Sveriges kristna råd genom Ekumeniska året 2025 och Ekumeniska veckan i Stockholm 18–24 augusti 2025. Bedömningen var att uppdragen är slutförda.</matterDescription>
+      <matterCategory>decision</matterCategory>
+      <rapporteur>Karin Sarja</rapporteur>
+      <diaryReferences>
+        <diaryReference>
+          <diaryId>KS 2018-0091</diaryId>
+        </diaryReference>
+      </diaryReferences>
+      <decision>Kyrkostyrelsen beslutade i enlighet med arbetsutskottets förslag att anse ärendena som slutbehandlade mot bakgrund av slutrapporten "Kyrkomötesuppdraget att uppmärksamma Nicea 325 och Stockholmsmötet 1925 år 2025".</decision>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 9</matterNumber>
+      <matterTitle>Kyrkostyrelsens råds årsberättelser 2025</matterTitle>
+      <matterDescription>Kyrkostyrelsen fick information om de årsberättelser som inkommit från kyrkostyrelsens nio råd. Råden upprättar årsberättelser inför kyrkostyrelsens första sammanträde på våren och återrapporterar löpande via protokoll.</matterDescription>
+      <matterCategory>decision</matterCategory>
+      <rapporteur>Patrik Lidin</rapporteur>
+      <diaryReferences>
+        <diaryReference>
+          <diaryId>KS 2026-0057</diaryId>
+        </diaryReference>
+      </diaryReferences>
+      <decision>Kyrkostyrelsen beslutade i enlighet med arbetsutskottets förslag att med godkännande lägga rådens årsberättelser till handlingarna.</decision>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 10</matterNumber>
+      <matterTitle>Kyrkostyrelsens råd 2026–2029; inrättande och instruktioner</matterTitle>
+      <matterDescription>Efter 2025 års kyrkoval behöver den nyvalda kyrkostyrelsen ta ställning till förtroendemannaorganisationen. Vid sammanträdet 17 december 2025 inrättades kyrkostyrelsens dispens- och överprövningskommitté och kapitalförvaltningsråd. Kyrkostyrelsen fick en presentation av förslag till inrättande av och instruktioner för ytterligare fem råd för mandatperioden 2026–2029.</matterDescription>
+      <matterCategory>decision</matterCategory>
+      <rapporteur>Patrik Lidin</rapporteur>
+      <rapporteur>Karin Sarja</rapporteur>
+      <rapporteur>Henning Lillhager</rapporteur>
+      <diaryReferences>
+        <diaryReference>
+          <diaryId>KS 2025-1539</diaryId>
+        </diaryReference>
+      </diaryReferences>
+      <decision>Kyrkostyrelsen beslutade i enlighet med arbetsutskottets förslag att för mandatperioden 2026–2029 inrätta och fastställa instruktioner för: kyrkostyrelsens internationella råd (prot.bil. 2), kyrkostyrelsens råd för samverkan och digitalisering (prot.bil. 3), kyrkostyrelsens råd för Svenska kyrkan i utlandet (prot.bil. 4), Samiska rådet i Svenska kyrkan (prot.bil. 5) och Svenska kyrkans teologiska kommitté (prot.bil. 6).</decision>
+      <attachments>
+        <attachment>
+          <attachmentId>Prot.bil.-2-–-Instruktion-för-</attachmentId>
+          <attachmentTitle>Prot.bil. 2 – Instruktion för kyrkostyrelsens internationella råd</attachmentTitle>
+          <attachmentType>appendix</attachmentType>
+          <file path="Prot.bil.-2---Instruktion-för-.pdf" fileFormat="application/pdf"/>
+        </attachment>
+        <attachment>
+          <attachmentId>Prot.bil.-3-–-Instruktion-för-</attachmentId>
+          <attachmentTitle>Prot.bil. 3 – Instruktion för kyrkostyrelsens råd för samverkan och digitalisering</attachmentTitle>
+          <attachmentType>appendix</attachmentType>
+          <file path="Prot.bil.-3---Instruktion-för-.pdf" fileFormat="application/pdf"/>
+        </attachment>
+        <attachment>
+          <attachmentId>Prot.bil.-4-–-Instruktion-för-</attachmentId>
+          <attachmentTitle>Prot.bil. 4 – Instruktion för kyrkostyrelsens råd för Svenska kyrkan i utlandet</attachmentTitle>
+          <attachmentType>appendix</attachmentType>
+          <file path="Prot.bil.-4---Instruktion-för-.pdf" fileFormat="application/pdf"/>
+        </attachment>
+        <attachment>
+          <attachmentId>Prot.bil.-5-–-Instruktion-för-</attachmentId>
+          <attachmentTitle>Prot.bil. 5 – Instruktion för Samiska rådet i Svenska kyrkan</attachmentTitle>
+          <attachmentType>appendix</attachmentType>
+          <file path="Prot.bil.-5---Instruktion-för-.pdf" fileFormat="application/pdf"/>
+        </attachment>
+        <attachment>
+          <attachmentId>Prot.bil.-6-–-Instruktion-för-</attachmentId>
+          <attachmentTitle>Prot.bil. 6 – Instruktion för Svenska kyrkans teologiska kommitté</attachmentTitle>
+          <attachmentType>appendix</attachmentType>
+          <file path="Prot.bil.-6---Instruktion-för-.pdf" fileFormat="application/pdf"/>
+        </attachment>
+      </attachments>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 11</matterNumber>
+      <matterTitle>Val till kyrkostyrelsens råd 2026–2029</matterTitle>
+      <matterDescription>Kyrkostyrelsen fick en presentation av förslag till val av ledamöter i kyrkostyrelsens råd och diskuterade förslaget. Linda Johansson deltog inte i beslutet avseende internationella rådet och Lars Johnsson deltog inte i beslutet avseende rådet för samverkan och digitalisering.</matterDescription>
+      <matterCategory>decision</matterCategory>
+      <rapporteur>Patrik Lidin</rapporteur>
+      <rapporteur>Karin Sarja</rapporteur>
+      <rapporteur>Antonia Spiring-Sundberg</rapporteur>
+      <diaryReferences>
+        <diaryReference>
+          <diaryId>KS 2025-1539</diaryId>
+        </diaryReference>
+      </diaryReferences>
+      <decision>Kyrkostyrelsen beslutade i enlighet med arbetsutskottets förslag att välja ledamöter i kyrkostyrelsens internationella råd, rådet för samverkan och digitalisering, rådet för Svenska kyrkan i utlandet, Samiska rådet och teologiska kommittén för mandatperioden 2026–2029, med ordföranden och vice ordföranden enligt förslag (se protokollet för fullständig namnförteckning). Vidare beslutade kyrkostyrelsen att förklara beslutet omedelbart justerat.</decision>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 12</matterNumber>
+      <matterTitle>Val till kyrkostyrelsens arbetsgrupper och samarbetsråd 2026–2029</matterTitle>
+      <matterDescription>Kyrkostyrelsen fick en presentation av förslag till val och diskuterade det. Jesper Eneroth lyfte behov av att utse ersättare i utredningen om hållbara demokratiska strukturer. Katarina Glas deltog inte avseende samarbetsrådet Svenska kyrkan–EFS och Sofie Halvarsson deltog inte avseende Dialog Pingst Fria församlingar.</matterDescription>
+      <matterCategory>decision</matterCategory>
+      <rapporteur>Patrik Lidin</rapporteur>
+      <rapporteur>Antonia Spiring-Sundberg</rapporteur>
+      <diaryReferences>
+        <diaryReference>
+          <diaryId>KS 2025-1539</diaryId>
+        </diaryReference>
+      </diaryReferences>
+      <decision>Kyrkostyrelsen beslutade i enlighet med arbetsutskottets förslag att välja ledamöter i samarbetsrådet Svenska kyrkan–EFS, samtalsgruppen med Equmeniakyrkan, Dialog Pingst Fria församlingar, samrådsgruppen med ortodoxa kyrkorna, beredningsgrupperna för kulturstipendium och lärande- och undervisningspris, kontaktgruppen Svenska kyrkan–Episkopala kyrkan samt referensgruppen för redovisning, samt att bekräfta ledamöterna i musikrådets kommitté och utredningen om hållbara demokratiska strukturer (se protokollet för fullständig namnförteckning). Vidare beslutade kyrkostyrelsen att förklara beslutet omedelbart justerat samt att uppdra till generalsekreteraren att utse ersättare i utredningen om hållbara demokratiska strukturer, efter anmälan av respektive nomineringsgrupp.</decision>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 13</matterNumber>
+      <matterTitle>Fast arvode till ordförande i kyrkostyrelsens råd</matterTitle>
+      <matterDescription>Svenska kyrkans arvodesnämnd för den nationella nivån har 20 januari 2025 fastställt belopp för fasta arvoden till ordförande i kyrkostyrelsens råd 2026–2029. Kyrkostyrelsen fick en presentation av förslaget.</matterDescription>
+      <matterCategory>decision</matterCategory>
+      <rapporteur>Patrik Lidin</rapporteur>
+      <diaryReferences>
+        <diaryReference>
+          <diaryId>KS 2025-1539</diaryId>
+        </diaryReference>
+      </diaryReferences>
+      <decision>Kyrkostyrelsen beslutade i enlighet med arbetsutskottets förslag att det ska utgå fast årligt arvode till ordföranden i kyrkostyrelsens dispens- och överprövningskommitté, internationella råd, kapitalförvaltningsråd, musikråd, rådet för samverkan och digitalisering, rådet för Svenska kyrkan i utlandet, Samiska rådet och teologiska kommittén, med belopp fastställda av arvodesnämnden.</decision>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 14</matterNumber>
+      <matterTitle>Kyrkostyrelsens sammanträden 2026–2028</matterTitle>
+      <matterDescription>Kyrkostyrelsen fick en presentation av förslag till sammanträdesplan för 2028 samt förslag att följdändra planerna för 2026 och 2027. Kyrkostyrelsen diskuterade förslaget.</matterDescription>
+      <matterCategory>decision</matterCategory>
+      <rapporteur>Patrik Lidin</rapporteur>
+      <diaryReferences>
+        <diaryReference>
+          <diaryId>KS 2025-1503</diaryId>
+        </diaryReference>
+      </diaryReferences>
+      <decision>Kyrkostyrelsen beslutade i enlighet med arbetsutskottets förslag att fastställa sammanträdesplanen för 2028 (prot.bil. 7) samt att följdändra sammanträdesplanerna för 2026 och 2027 (prot.bil. 8 och 9).</decision>
+      <attachments>
+        <attachment>
+          <attachmentId>Prot.bil.-7-–-Sammanträdesplan</attachmentId>
+          <attachmentTitle>Prot.bil. 7 – Sammanträdesplan för kyrkostyrelsen 2028</attachmentTitle>
+          <attachmentType>appendix</attachmentType>
+          <file path="Prot.bil.-7---Sammanträdesplan.pdf" fileFormat="application/pdf"/>
+        </attachment>
+        <attachment>
+          <attachmentId>Prot.bil.-8-–-Uppdaterad-samma</attachmentId>
+          <attachmentTitle>Prot.bil. 8 – Uppdaterad sammanträdesplan för kyrkostyrelsen 2026</attachmentTitle>
+          <attachmentType>appendix</attachmentType>
+          <file path="Prot.bil.-8---Uppdaterad-samma.pdf" fileFormat="application/pdf"/>
+        </attachment>
+        <attachment>
+          <attachmentId>Prot.bil.-9-–-Uppdaterad-samma</attachmentId>
+          <attachmentTitle>Prot.bil. 9 – Uppdaterad sammanträdesplan för kyrkostyrelsen 2027</attachmentTitle>
+          <attachmentType>appendix</attachmentType>
+          <file path="Prot.bil.-9---Uppdaterad-samma.pdf" fileFormat="application/pdf"/>
+        </attachment>
+      </attachments>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 15</matterNumber>
+      <matterTitle>Verksamhet och ekonomi samt övrig information</matterTitle>
+      <matterCategory>information</matterCategory>
+      <rapporteur>Patrik Lidin</rapporteur>
+      <rapporteur>Camilla Asp</rapporteur>
+      <rapporteur>Karin Sarja</rapporteur>
+      <rapporteur>Erika Brundin</rapporteur>
+      <rapporteur>Emma Hansen Dahlqvist</rapporteur>
+      <rapporteur>Marie Nordström</rapporteur>
+      <subMatters>
+        <subMatter>
+          <subMatterNumber>§ 15a</subMatterNumber>
+          <subMatterTitle>Verksamhet och ekonomi 2027–2029; budgetberedning</subMatterTitle>
+          <matterDescription>Kyrkostyrelsen fick en presentation av förslag till inledande avsnitt till skrivelsen om verksamhet och ekonomi för Svenska kyrkans nationella nivå 2027–2029 och lämnade synpunkter till ledning för det fortsatta arbetet.</matterDescription>
+          <matterCategory>information</matterCategory>
+          <diaryReferences>
+            <diaryReference>
+              <diaryId>KS 2025-1850</diaryId>
+            </diaryReference>
+          </diaryReferences>
+        </subMatter>
+        <subMatter>
+          <subMatterNumber>§ 15b</subMatterNumber>
+          <subMatterTitle>Status gamla kyrkomötesuppdrag</subMatterTitle>
+          <matterDescription>Kyrkostyrelsen fick information om och diskuterade behandlingen av kyrkomötesärenden från 2024 och tidigare, inklusive arbetet med kyrkomötesuppdraget om psalmboken.</matterDescription>
+          <matterCategory>information</matterCategory>
+          <diaryReferences>
+            <diaryReference>
+              <diaryId>KS 2026-0060</diaryId>
+            </diaryReference>
+          </diaryReferences>
+        </subMatter>
+        <subMatter>
+          <subMatterNumber>§ 15c</subMatterNumber>
+          <subMatterTitle>Utvärdering av kyrkostyrelsens arbete under 2025</subMatterTitle>
+          <matterDescription>Kyrkostyrelsen fick information om utfallet av enkätundersökningen för kyrkostyrelsens arbete 2025 och lämnade synpunkter till ledning för det fortsatta arbetet.</matterDescription>
+          <matterCategory>information</matterCategory>
+          <diaryReferences>
+            <diaryReference>
+              <diaryId>KS 2025-1872</diaryId>
+            </diaryReference>
+          </diaryReferences>
+        </subMatter>
+        <subMatter>
+          <subMatterNumber>§ 15d</subMatterNumber>
+          <subMatterTitle>Ärkebiskopens rapport</subMatterTitle>
+          <matterDescription>Ärkebiskopen informerade om deltagande i rikskonferensen, konferens för TCO-chefer, galan Det räcker, Sveriges kristna råds partiledarsamtal, möte med laestadianerna och mottagandet av bibelöversättningen NT 2026. Ärkebiskopens fastebok skriven av Mattias Klum delades ut.</matterDescription>
+          <matterCategory>information</matterCategory>
+        </subMatter>
+        <subMatter>
+          <subMatterNumber>§ 15e</subMatterNumber>
+          <subMatterTitle>Generalsekreterarens rapport</subMatterTitle>
+          <matterDescription>Kyrkostyrelsen fick en presentation av generalsekreterarens skriftliga rapport. Information gavs om det pågående omvalet 23 februari–1 mars i Kullings valkrets i Skara stift och Vittinge församling i Uppsala stift, om kulturarvsfrågor samt den kommande överläggningen mellan arbetsutskottet och stiftsstyrelsernas presidier.</matterDescription>
+          <matterCategory>information</matterCategory>
+          <diaryReferences>
+            <diaryReference>
+              <diaryId>KS 2025-1957</diaryId>
+            </diaryReference>
+          </diaryReferences>
+        </subMatter>
+      </subMatters>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 16</matterNumber>
+      <matterTitle>Anmälningsärenden</matterTitle>
+      <matterCategory>information</matterCategory>
+      <subMatters>
+        <subMatter>
+          <subMatterNumber>§ 16a</subMatterNumber>
+          <subMatterTitle>Protokoll från kyrkostyrelsens råd</subMatterTitle>
+          <matterDescription>Följande protokoll anmäldes och lades till handlingarna: Kyrkostyrelsens musikråd 2025-11-24; Kyrkostyrelsens redovisningsråd 2025-11-17; Kyrkostyrelsens redovisningsråd 2025-12-04; Kyrkostyrelsens råd för Svenska kyrkan i utlandet 2025-12-10.</matterDescription>
+          <matterCategory>information</matterCategory>
+          <diaryReferences>
+            <diaryReference>
+              <diaryId>KS 2026-0056</diaryId>
+            </diaryReference>
+          </diaryReferences>
+        </subMatter>
+        <subMatter>
+          <subMatterNumber>§ 16b</subMatterNumber>
+          <subMatterTitle>Övriga anmälningsärenden</subMatterTitle>
+          <matterDescription>Följande övriga ärenden anmäldes och lades till handlingarna: Protokoll från biskopsmötet; Årsrapport för arbetet med åtaganden till det samiska folket; Större arrangemang 2026–2028; Kyrkostyrelsens budget och verksamhetsplan 2026; Planerade skrivelser till kyrkomötet 2026; Planerade ärenden 2026 för kyrkostyrelsen; Brev till kyrkostyrelsen om pilgrimsverksamheten i Linköpings stift; Skrivelse Luleå stift om behov av ändring i kyrkoordningen avseende prostarnas visitationer.</matterDescription>
+          <matterCategory>information</matterCategory>
+          <diaryReferences>
+            <diaryReference>
+              <diaryId>KS 2026-0054</diaryId>
+            </diaryReference>
+          </diaryReferences>
+        </subMatter>
+      </subMatters>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 17</matterNumber>
+      <matterTitle>Delegationsärenden</matterTitle>
+      <matterDescription>Kyrkostyrelsen lade följande anmälda delegationsbeslut till handlingarna: 2025-127 (KM 2021-0007), 2025-128 till 2025-148 (KS 2025-1737), 2025-158 (KS 2025-1769), 2025-160 (KS 2025-1692), 2025-161 (KM 2025-0017), 2025-163 (KS 2025-1982), 2025-164 (KS 2025-1692), 2026-001 (KS 2020-0732), 2026-002 (KS 2025-1922), 2026-003 (KS 2026-0043), 2026-004 till 2026-005 (KM 2025-0016/0017), 2026-006 (KS 2025-1948), 2026-007 (KM 2026-0016), 2026-008 (KM 2025-0016), 2026-009 (KS 2026-0094), 2026-010 (KS 2023-1011), 2026-011 (KS 2025-0344), 2026-012 (KS 2026-0033), 2026-013 (KS 2025-2015), 2026-014 och 2026-016 (KM 2025-0016), 2026-017 (KS 2025-0827).</matterDescription>
+      <matterCategory>information</matterCategory>
+      <diaryReferences>
+        <diaryReference>
+          <diaryId>KS 2026-0055</diaryId>
+        </diaryReference>
+      </diaryReferences>
+    </matter>
+
+    <matter>
+      <matterNumber>§ 18</matterNumber>
+      <matterTitle>Avslutning</matterTitle>
+      <matterCategory>information</matterCategory>
+      <decision>Efter välsignelsen förklarade ordföranden sammanträdet avslutat.</decision>
+    </matter>
+
+  </matters>
+
+  <minutes>
+    <minutesHeader>
+      <minutesNumber>KS 2026:1</minutesNumber>
+      <meetingRef>KS-2026:1</meetingRef>
+      <signatories>
+        <signatory role="chair">Martin Modéus</signatory>
+        <signatory role="adjuster">Håkan Widepalm</signatory>
+        <signatory role="secretary">Ulrika Holmberg</signatory>
+      </signatories>
+    </minutesHeader>
+
+    <attendees>
+      <attendee role="chair">
+        <name>Martin Modéus</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="member">
+        <name>Wanja Lundby-Wedin</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="member">
+        <name>Håkan Widepalm</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="member">
+        <name>Britt Björneke</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="member">
+        <name>Anders Brunnstedt</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="member">
+        <name>Amanda Carlshamre</name>
+        <attendanceStatus>absent</attendanceStatus>
+      </attendee>
+      <attendee role="member">
+        <name>Jesper Eneroth</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="member">
+        <name>Karin Janfalk</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="member">
+        <name>Marie Johansson</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="member">
+        <name>Lars Johnsson</name>
+        <attendanceStatus>present</attendanceStatus>
+        <itemAbsences>
+          <itemAbsence matterRef="§ 11" reason="conflict-of-interest"/>
+        </itemAbsences>
+      </attendee>
+      <attendee role="member">
+        <name>Madeleine Jonsson</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="member">
+        <name>Roberth Krantz</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="member">
+        <name>Olle Reichenberg</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="member">
+        <name>Erik Sjöstrand</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="member">
+        <name>Anna Sundberg</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="deputy">
+        <name>Johan Dalman</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="deputy">
+        <name>Victor Backström</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="deputy">
+        <name>Vicktoria Bagi</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="deputy">
+        <name>Johannes Fransson</name>
+        <attendanceStatus>present</attendanceStatus>
+        <itemAbsences>
+          <itemAbsence matterRef="§§ 10–12" reason="left-meeting"/>
+        </itemAbsences>
+      </attendee>
+      <attendee role="deputy">
+        <name>Gunilla Franzén</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="deputy">
+        <name>Lisa Gerenmark</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="deputy">
+        <name>Katarina Glas</name>
+        <attendanceStatus>present</attendanceStatus>
+        <itemAbsences>
+          <itemAbsence matterRef="§ 12" reason="conflict-of-interest"/>
+        </itemAbsences>
+      </attendee>
+      <attendee role="deputy">
+        <name>Sofie Halvarsson</name>
+        <attendanceStatus>present</attendanceStatus>
+        <itemAbsences>
+          <itemAbsence matterRef="§ 12" reason="conflict-of-interest"/>
+        </itemAbsences>
+      </attendee>
+      <attendee role="deputy">
+        <name>Linda Johansson</name>
+        <attendanceStatus>present</attendanceStatus>
+        <itemAbsences>
+          <itemAbsence matterRef="§ 11" reason="conflict-of-interest"/>
+        </itemAbsences>
+      </attendee>
+      <attendee role="deputy">
+        <name>Ingvar Jonsson</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="deputy">
+        <name>Kjell O Lejon</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="deputy">
+        <name>Elin Lockneus</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="deputy">
+        <name>Lena Östholm Munkberg</name>
+        <attendanceStatus>absent</attendanceStatus>
+      </attendee>
+      <attendee role="deputy">
+        <name>Edvina Palmcrantz</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+      <attendee role="deputy">
+        <name>Markus Svensson</name>
+        <attendanceStatus>present</attendanceStatus>
+      </attendee>
+    </attendees>
+
+    <quorum>true</quorum>
+
+    <minutesDocument>
+      <title>Sammanträdesprotokoll Kyrkostyrelsen 2026:1</title>
+      <originalFormat>digital</originalFormat>
+      <file path="Protokoll_Kyrkostyrelsen_2026022425.pdf" fileFormat="application/pdf"/>
+      <eSignatures>
+        <eSignature present="true">
+          <signerName>Martin Modéus</signerName>
+          <signerRole>chair</signerRole>
+          <signatureType>PAdES-B-LTA</signatureType>
+          <signatureServiceProvider>Comfact Signature (Referensnummer: 305330SE)</signatureServiceProvider>
+        </eSignature>
+        <eSignature present="true">
+          <signerName>Håkan Widepalm</signerName>
+          <signerRole>adjuster</signerRole>
+          <signatureType>PAdES-B-LTA</signatureType>
+          <signatureServiceProvider>Comfact Signature (Referensnummer: 305330SE)</signatureServiceProvider>
+        </eSignature>
+        <eSignature present="true">
+          <signerName>Ulrika Holmberg</signerName>
+          <signerRole>secretary</signerRole>
+          <signatureType>PAdES-B-LTA</signatureType>
+          <signatureServiceProvider>Comfact Signature (Referensnummer: 305330SE)</signatureServiceProvider>
+        </eSignature>
+      </eSignatures>
+    </minutesDocument>
+  </minutes>
+
+</boardMeeting>
